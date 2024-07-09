@@ -1,0 +1,17 @@
+{
+	"manifest_version": 3,
+	"short_name": "capsit",
+	"name": "Caps Link URL to Clipboard",
+	"description": "When CapsLock is pressed, the clicked link URL is copied to the clipboard.",
+	"version": "0.1",
+	"content_scripts": [
+		{
+			"js": [
+				"content.js"
+			],
+			"matches": [
+				"https://*/*"
+			]
+		}
+	]
+}
